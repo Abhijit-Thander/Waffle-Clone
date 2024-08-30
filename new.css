@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  /* height: 100%;
+  width: 100%; */
+  position: relative;
+}
+.locate-us {
+  height: 40px;
+  /* width: 110px; */
+  color: rgba(255, 193, 22);
+  background-color: #652c14;
+  position: absolute;
+  top: 30%;
+  z-index: 299;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+}
+.locate-us p {
+  font-size: 1.1vw;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+}
+.locate-us i {
+  color: #fccb24;
+}
+
+#nav {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 20px 55px;
+  background-image: linear-gradient(rgb(0, 0, 0), #ffffff00);
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+#nav .logo {
+  position: absolute;
+  top: 20%;
+}
+#nav .nav-right {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  display: flex;
+  gap: 3vw;
+}
+#nav .nav-right a {
+  font-size: 1vw;
+  font-weight: 700;
+  /* line-height: 60px; */
+  font-family: "Quicksand", sans-serif;
+}
+#nav .nav-right a:hover {
+  color: rgba(255, 193, 22);
+  transition: 0.5s;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#hero-story {
+  height: 100%;
+  width: 100%;
+  padding: 80px 8vw;
+  background-color: #fccb24;
+  z-index: 9;
+}
+#hero-story h1,
+h2 {
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  position: relative;
+  margin: 0 10px;
+}
+#hero-story h2 {
+  margin-top: 20px;
+}
+#hero-story h2::after {
+  content: url("./Assests/h1-after.png");
+  position: absolute;
+}
+#hero-story h2::before {
+  content: url("./Assests/h1-before.png");
+  position: absolute;
+  top: -18%;
+  left: 36%;
+}
+#hero-story .hero-story-blog {
+  padding: 60px 0;
+  /* background-color: green; */
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#hero-story .hero-story-blog p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
+}
+#hero-story .hero-story-blog .blog-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 50%;
+}
+#hero-story .hero-story-blog .blog-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 45%;
+}
+button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1vw;
+  padding: 12px;
+  background-color: #61493a;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+#section {
+  height: 75vh;
+  overflow: hidden;
+  background-color: red;
+}
+#section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+  scale: 1.09;
+}
+
+#our-speciality {
+  height: 150vh;
+  width: 100%;
+}
+
+#our-speciality .inner-content {
+  height: 100%;
+  width: 100%;
+  background: url("./Assests/bg-1.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 10px;
+  background-attachment: fixed;
+}
+#our-speciality h1 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4vw;
+  color: #4bc2d4;
+  position: relative;
+}
+#our-speciality .inner-content .container {
+  width: 100%;
+  height: 90%;
+  /* background-color: red; */
+  padding: 10vw 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+.inner-content .container .box-top {
+  height: 50%;
+  display: flex;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+}
+.inner-content .container .box-bottom {
+  height: 50%;
+  display: flex;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+#our-speciality h1::after {
+  content: url("./Assests/arrrow.png");
+  position: absolute;
+  top: 30%;
+}
+#section-2 {
+  height: 68vh;
+  overflow: hidden;
+}
+#section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  scale: 1.09;
+}
+
+#section-3 {
+  height: 50vh;
+  background-color: #ffc82e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-3 .outer-div {
+  height: 18vw;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+#section-3 .outer-div .waffle-box {
+  height: 100%;
+  width: 22%;
+  max-width: 22%;
+  background: url("./Assests/waffle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.outer-div .waffle-box h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 3.5vw;
+}
+.outer-div .waffle-box p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1vw;
+}
+#section-3 .outer-div .waffle-box img {
+  height: 100%;
+  width: 100%;
+}
+#section-4 {
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: red; */
+}
+#section-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1.1;
+}
+#products-page {
+  height: 150vh;
+  width: 100vw;
+  padding: 4vw 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+}
+#products-page .outer-div {
+  height: 100%;
+  width: 100%;
+}
+#products-page .outer-div h1 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4vw;
+  color: #4bc2d4;
+  position: relative;
+}
+#products-page .outer-div h1::after {
+  content: url("./Assests/arrrow.png");
+  position: absolute;
+  top: 30%;
+}
+#products-page .outer-div .inner-div-box {
+  margin-top: 4vh;
+  width: 100%;
+  height: 90%;
+  background: url("./Assests/Website-Product-images.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  scale: 1.3;
+}
+#award-sec {
+  height: 70vh;
+  width: 100%;
+  padding: 4vw 12vw;
+}
+#award-sec h1 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4vw;
+  color: #ffc116;
+}
+#award-sec .award {
+  height: 75%;
+  margin-top: 2vh;
+
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#award-sec .award .awards-div {
+  display: flex;
+  gap: 2vw;
+  animation: anime 30s infinite linear;
+}
+@keyframes anime {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#award-sec .award .awards-div .award-box {
+  width: 14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awards-div .award-box p {
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.7;
+}
+#award-sec .award .awards-div .award-box img {
+  height: 100%;
+  width: 100%;
+}
+#footer {
+  position: relative;
+  height: 15vh;
+  background-color: #442816;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+#footer-top {
+  height: 80vh;
+  width: 100%;
+  background-color: #fccb24;
+  padding: 4vw 6vw;
+}
+#footer-top h1 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4vw;
+  color: #fff;
+  position: relative;
+  margin-bottom: 2vh;
+}
+#footer-top h1::after {
+  content: url("./Assests/h1-after.png");
+  position: absolute;
+}
+#footer-top h1::before {
+  content: url("./Assests/h1-before.png");
+  position: absolute;
+  top: -18%;
+  left: 31%;
+}
+#footer-top .footer-top-content-box {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  padding: 4vw 0;
+  justify-content: space-around;
+  font-family: "Quicksand", sans-serif;
+}
+#footer-top .footer-top-content-box .content-box {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+}
+.content-box .social-icon {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.content-box .social-icon i {
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.content-box .social-icon i:hover {
+  color: #fff;
+  scale: 1.6;
+}
+.footer-top-content-box .content-box p {
+  font-size: 1.1vw;
+}
+.footer-top-content-box .content-box ul li {
+  line-height: 2vw;
+  cursor: pointer;
+  font-size: 1.1vw;
+}
+.footer-top-content-box .content-box ul li:hover {
+  color: #fff;
+}
+#footer h4 {
+  color: #fff;
+  display: flex;
+}
+#footer h4 img {
+  height: 20px;
+  margin: 5px 0 0 10px;
+}
