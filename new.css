@@ -16,13 +16,10 @@ body {
 }
 
 #main {
-  /* height: 100%;
-  width: 100%; */
   position: relative;
 }
 .locate-us {
   height: 40px;
-  /* width: 110px; */
   color: rgba(255, 193, 22);
   background-color: #652c14;
   position: absolute;
@@ -72,7 +69,6 @@ body {
 #nav .nav-right a {
   font-size: 1vw;
   font-weight: 700;
-  /* line-height: 60px; */
   font-family: "Quicksand", sans-serif;
 }
 #nav .nav-right a:hover {
@@ -447,3 +443,6 @@ button {
   height: 20px;
   margin: 5px 0 0 10px;
 }
+
+/* +++++++++++++++++++++++++++++ Responsive Styles ++++++++++++++++++++++++++++++++++ */
+
